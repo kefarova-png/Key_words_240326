@@ -1,8 +1,7 @@
 def max_number(a, b):
     if a >= b:
         return a
-    else:
-        return b
+    return b
 
 
 def empty_function():
