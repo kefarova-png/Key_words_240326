@@ -1,7 +1,5 @@
 def max_number(a, b):
-    if a == b:
-        return "Введённые числа равны"
-    elif a > b:
+    if a >= b:
         return a
     else:
         return b
@@ -23,7 +21,6 @@ def test_max_number():
         assert max_number(-1, 1) == 1, "Ошибка: max_number(-1, 1) должен быть равен 1"
         assert max_number(-111.5, -125.1) == -111.5, "Ошибка: max_number(-111.5, -125.1) должен быть равен -111.5"
         assert max_number(-1.5, 0) == 0, "Ошибка: max_number(-1.5, 0) должен быть равен 0"
-        assert max_number(25,25) == "Введённые числа равны", "Ошибка: max_number(25, 25) должен быть равен \"Введённые числа равны\""
 
 
 try:
